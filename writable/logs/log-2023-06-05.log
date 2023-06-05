@@ -1,0 +1,325 @@
+ERROR - 2023-06-05 06:03:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4-test', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:03:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 06:05:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4-test', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:05:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 06:05:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4-test', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:05:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 06:07:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4-test', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:07:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidate_register` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 06:07:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:07:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidate_register` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 06:08:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4-new\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4-new\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\ci4-new\ci4\app\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\ci4-new\ci4\app\Controllers\Home.php(59): App\Models\CandidateModel->saveData(Array)
+#5 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#6 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4-new\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4-new\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-05 06:08:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidate_register` (`name`, `email`, `dob`, `address`, `sex`, `language`, `salary`, `pdf`) VALUES (:name:, :email:, :dob:, :address:, :sex:, :language:, :salary:, :pdf:)', [...], false)
+ 3 APPPATH\Models\CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Home.php(59): App\Models\CandidateModel->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 07:36:32 --> Call to a member function getTempdata() on null
+in APPPATH\Views\candidate\list.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('candidate/list', [], true)
+ 4 APPPATH\Controllers\Home.php(80): view('candidate/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateList()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 07:36:57 --> Call to a member function getTempdata() on null
+in APPPATH\Views\candidate\list.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('candidate/list', [], true)
+ 4 APPPATH\Controllers\Home.php(80): view('candidate/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateList()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 07:57:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(84): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateView('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 08:00:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\CandidateModel.php on line 42.
+ 1 APPPATH\Controllers\Home.php(84): App\Models\CandidateModel->getUsersId('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateView('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 08:01:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\CandidateModel.php on line 42.
+ 1 APPPATH\Controllers\Home.php(84): App\Models\CandidateModel->getUsersId('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateView('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 08:03:10 --> Call to a member function select() on null
+in APPPATH\Models\CandidateModel.php on line 41.
+ 1 APPPATH\Controllers\Home.php(84): App\Models\CandidateModel->getUsersId('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateView('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 08:05:43 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Models\CandidateModel.php on line 46.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'C:\\xampp\\htdocs\\ci4-new\\ci4\\app\\Models\\CandidateModel.php', 46, [...])
+ 2 APPPATH\Models\CandidateModel.php(46): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 3 APPPATH\Controllers\Home.php(84): App\Models\CandidateModel->getUsersId('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->candidateView('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 09:17:46 --> Call to a member function verifyEmail() on null
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:00:20 --> Call to a member function post() on null
+in APPPATH\Controllers\Candidate.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Candidate->candidateAdd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Candidate))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:03:03 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Candidate.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\xampp\\htdocs\\ci4-new\\ci4\\app\\Controllers\\Candidate.php', 50, [...])
+ 2 APPPATH\Controllers\Candidate.php(50): implode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Candidate->candidateAdd()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Candidate))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:03:26 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Candidate.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\xampp\\htdocs\\ci4-new\\ci4\\app\\Controllers\\Candidate.php', 50, [...])
+ 2 APPPATH\Controllers\Candidate.php(50): implode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Candidate->candidateAdd()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Candidate))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:06:28 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Candidate.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\xampp\\htdocs\\ci4-new\\ci4\\app\\Controllers\\Candidate.php', 51, [...])
+ 2 APPPATH\Controllers\Candidate.php(51): implode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Candidate->candidateAdd()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Candidate))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:06:32 --> implode(): Invalid arguments passed
+in APPPATH\Controllers\Candidate.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Invalid arguments passed', 'C:\\xampp\\htdocs\\ci4-new\\ci4\\app\\Controllers\\Candidate.php', 51, [...])
+ 2 APPPATH\Controllers\Candidate.php(51): implode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Candidate->candidateAdd()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Candidate))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

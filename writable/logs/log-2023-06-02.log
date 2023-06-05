@@ -1,0 +1,542 @@
+CRITICAL - 2023-06-02 13:51:42 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 226.
+ 1 SYSTEMPATH/CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH/spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-02 09:01:28 --> Call to undefined function display_error()
+in APPPATH/Views/candidate/add.php on line 7.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/add', [], true)
+ 4 APPPATH/Controllers/Home.php(17): view('candidate/add')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 09:01:52 --> Call to undefined function display_error()
+in APPPATH/Views/candidate/add.php on line 7.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/add', [], true)
+ 4 APPPATH/Controllers/Home.php(17): view('candidate/add')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 09:42:09 --> Undefined variable $cdata
+in APPPATH/Controllers/Home.php on line 48.
+ 1 APPPATH/Controllers/Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cdata', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 09:44:35 --> Undefined variable $cdata
+in APPPATH/Controllers/Home.php on line 49.
+ 1 APPPATH/Controllers/Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cdata', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 49)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 09:45:25 --> Undefined variable $cdata
+in APPPATH/Controllers/Home.php on line 50.
+ 1 APPPATH/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cdata', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 50)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 09:45:28 --> Invalid file: "common/base.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/base.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('common/base', [], true)
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/add', [], true)
+ 4 APPPATH/Controllers/Home.php(64): view('candidate/add', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:47:04 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:47:04 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699224_07097b3047994efad5cd.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699224_07097b3047994efad5cd.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699224_07097b3047994efad5cd.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:48:13 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:48:13 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699293_87dba58c40e8db983d26.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699293_87dba58c40e8db983d26.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'dsfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699293_87dba58c40e8db983d26.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:48:27 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:48:27 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699307_12709f5c022f92e72cdf.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699307_12709f5c022f92e72cdf.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699307_12709f5c022f92e72cdf.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:49:24 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:49:24 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699364_1bb78ce4debed7530b25.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699364_1bb78ce4debed7530b25.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfsd\', \'4000\', \'http://localhost/ci4/public/uploads/1685699364_1bb78ce4debed7530b25.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:49:40 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:49:40 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699380_5c445e298fd703c3e1ef.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699380_5c445e298fd703c3e1ef.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699380_5c445e298fd703c3e1ef.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:50:58 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:50:58 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699458_9e8af5df87cf8902960d.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699458_9e8af5df87cf8902960d.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699458_9e8af5df87cf8902960d.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:51:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:51:12 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699472_6120716cef4a47d640a2.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699472_6120716cef4a47d640a2.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasdfasdf\', \'4000\', \'http://localhost/ci4/public/uploads/1685699472_6120716cef4a47d640a2.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:59:09 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:59:09 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'edwerdewdwed\', \'4000\', \'http://localhost/ci4/public/uploads/1685699949_1b9f76a300d705d8718a.jpg\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'edwerdewdwed\', \'4000\', \'http://localhost/ci4/public/uploads/1685699949_1b9f76a300d705d8718a.jpg\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'edwerdewdwed\', \'4000\', \'http://localhost/ci4/public/uploads/1685699949_1b9f76a300d705d8718a.jpg\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:59:22 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(50): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 09:59:22 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasda\', \'4000\', \'http://localhost/ci4/public/uploads/1685699962_d14f71c4866b4bf96fe3.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasda\', \'4000\', \'http://localhost/ci4/public/uploads/1685699962_d14f71c4866b4bf96fe3.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sdfasda\', \'4000\', \'http://localhost/ci4/public/uploads/1685699962_d14f71c4866b4bf96fe3.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(50): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 10:06:21 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(51): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 10:06:21 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'http://localhost/ci4//public/uploads/1685700381_94de9d47fb9cdfb5e8c3.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'http://localhost/ci4//public/uploads/1685700381_94de9d47fb9cdfb5e8c3.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'http://localhost/ci4//public/uploads/1685700381_94de9d47fb9cdfb5e8c3.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(51): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 10:08:31 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(51): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 10:08:31 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'1685700511_6cf84dd224ed346ece92.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'1685700511_6cf84dd224ed346ece92.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'sadfasdfasdfasdf\', \'4000\', \'1685700511_6cf84dd224ed346ece92.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(51): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 10:16:03 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(53): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 10:16:03 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-30\', \'sdASDAsd\', \'4000\', \'1685700963_8164f174cdd1f1d401be.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-30\', \'sdASDAsd\', \'4000\', \'1685700963_8164f174cdd1f1d401be.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-30\', \'sdASDAsd\', \'4000\', \'1685700963_8164f174cdd1f1d401be.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `salary`, `pdf`) VALUES (:name:, :email:, :birthday:, :address:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(53): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 10:24:55 --> mysqli_sql_exception: Unknown column 'birthday' in 'field list' in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(55): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 10:24:55 --> Unknown column 'birthday' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `sex`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-29\', \'sdfsdfasdf\', \'Female\', \'4000\', \'1685701495_d5566958bdd0b0aa4f65.pdf\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `sex`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-29\', \'sdfsdfasdf\', \'Female\', \'4000\', \'1685701495_d5566958bdd0b0aa4f65.pdf\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `sex`, `salary`, `pdf`) VALUES (\'jithan\', \'jaijithan@gmail.com\', \'2023-05-29\', \'sdfsdfasdf\', \'Female\', \'4000\', \'1685701495_d5566958bdd0b0aa4f65.pdf\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidates` (`name`, `email`, `birthday`, `address`, `sex`, `salary`, `pdf`) VALUES (:name:, :email:, :birthday:, :address:, :sex:, :salary:, :pdf:)', [...], false)
+ 5 APPPATH/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Home.php(55): App\Models\CandidateModel->saveData([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 10:35:56 --> Invalid file: "common/base.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/base.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('common/base', [], true)
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/add', [], true)
+ 4 APPPATH/Controllers/Home.php(71): view('candidate/add', [])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 10:52:53 --> Call to undefined function display_error()
+in APPPATH/Views/candidate/add.php on line 37.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/add', [], true)
+ 4 APPPATH/Controllers/Home.php(71): view('candidate/add', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 11:03:46 --> mysqli_sql_exception: Unknown column 'birthday' in 'field list' in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(57): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-02 11:08:54 --> mysqli_sql_exception: Unknown column 'birthday' in 'field list' in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(57): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-02 11:09:12 --> mysqli_sql_exception: Unknown column 'birthday' in 'field list' in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(57): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-02 11:20:41 --> mysqli_sql_exception: Unknown column 'language1' in 'field list' in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 11:22:15 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in /opt/lampp/htdocs/ci4/system/HTTP/IncomingRequest.php on line 588
+in SYSTEMPATH/HTTP/RequestTrait.php on line 249.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(588): CodeIgniter\HTTP\Request->fetchGlobal('request', 'language', 'language1', 'language2')
+ 2 APPPATH/Controllers/Home.php(52): CodeIgniter\HTTP\IncomingRequest->getVar('language', 'language1', 'language2')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 11:36:03 --> mysqli_sql_exception: Operand should contain 1 column(s) in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 11:43:27 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:43:44 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:43:48 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:46:49 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:47:13 --> Undefined property: App\Controllers\Home::$input
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', '/opt/lampp/htdocs/ci4/app/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 11:55:46 --> mysqli_sql_exception: Operand should contain 1 column(s) in /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/ci4/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /opt/lampp/htdocs/ci4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /opt/lampp/htdocs/ci4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /opt/lampp/htdocs/ci4/app/Models/CandidateModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Home.php(59): App\Models\CandidateModel->saveData(Array)
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(934): App\Controllers\Home->candidateAdd()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-02 11:57:41 --> Cannot use object of type stdClass as array
+in APPPATH/Views/candidate/list.php on line 41.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/list', [], true)
+ 4 APPPATH/Controllers/Home.php(79): view('candidate/list', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateList()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:00:14 --> Cannot use object of type stdClass as array
+in APPPATH/Views/candidate/list.php on line 41.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('candidate/list', [], true)
+ 4 APPPATH/Controllers/Home.php(79): view('candidate/list', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->candidateList()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
